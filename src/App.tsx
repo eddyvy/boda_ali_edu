@@ -1,4 +1,6 @@
 import { Box } from '@mui/material'
+import { Encabezado } from './components/Encabezado'
+import { Timer } from './components/Timer'
 
 function App() {
   return (
@@ -6,7 +8,8 @@ function App() {
       component='main'
       sx={{ display: 'flex', flexDirection: 'column' }}
     >
-      <h1>Hola</h1>
+      <Encabezado />
+      <Timer />
     </Box>
   )
 }
