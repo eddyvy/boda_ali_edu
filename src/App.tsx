@@ -1,17 +1,8 @@
-import { Box } from '@mui/material'
-import { Encabezado } from './components/Encabezado'
-import { Timer } from './components/Timer'
+import { RouterProvider } from 'react-router-dom'
+import { appRouter } from './app'
 
 function App() {
-  return (
-    <Box
-      component='main'
-      sx={{ display: 'flex', flexDirection: 'column' }}
-    >
-      <Encabezado />
-      <Timer />
-    </Box>
-  )
+  return <RouterProvider router={appRouter} />
 }
 
 export default App
