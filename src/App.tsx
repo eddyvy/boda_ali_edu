@@ -1,9 +1,14 @@
 import './index.sass'
 import { RouterProvider } from 'react-router-dom'
-import { appRouter } from './app'
+import { appRouter, appTheme } from './app'
+import { ThemeProvider } from '@mui/material'
 
 function App() {
-  return <RouterProvider router={appRouter} />
+  return (
+    <ThemeProvider theme={appTheme}>
+      <RouterProvider router={appRouter} />
+    </ThemeProvider>
+  )
 }
 
 export default App

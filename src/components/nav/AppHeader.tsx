@@ -21,7 +21,7 @@ export function AppHeader() {
             <Favorite />
           </IconButton>
           <Typography
-            variant='h6'
+            variant='subtitle1'
             component='div'
             sx={{ flexGrow: 1 }}
           >
