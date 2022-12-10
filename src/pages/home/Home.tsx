@@ -1,12 +1,10 @@
 import { Box, Typography } from '@mui/material'
 import { Timer } from '../../components/timer'
+import { PageLayout } from '../../layouts'
 
 export const HomePage = () => {
   return (
-    <Box
-      component='main'
-      sx={{ display: 'flex', flexDirection: 'column' }}
-    >
+    <PageLayout>
       <Box>
         <Typography
           component='h1'
@@ -41,6 +39,6 @@ export const HomePage = () => {
         </Typography>
       </Box>
       <Timer />
-    </Box>
+    </PageLayout>
   )
 }

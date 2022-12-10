@@ -1,3 +1,4 @@
+import './index.sass'
 import { RouterProvider } from 'react-router-dom'
 import { appRouter } from './app'
 
